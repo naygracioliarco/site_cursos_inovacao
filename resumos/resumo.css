@@ -3,15 +3,19 @@ body {
     margin: 20px;
     padding: 40px;
 }
+
 img {
     max-width: 40%;
     height: auto;
     display: block;
     margin: 20px auto;
 }
-h2, h3 {
+
+h2,
+h3 {
     text-align: center;
 }
+
 .voltar-btn {
     display: block;
     margin-bottom: 20px;
@@ -22,4 +26,29 @@ h2, h3 {
     color: #333;
     border-radius: 5px;
     width: fit-content;
+}
+
+#btn-voltar-topo {
+    display: none;
+    /* Inicialmente, o botão fica escondido */
+    position: fixed;
+    /* Fixa o botão na tela, mesmo quando rola a página */
+    bottom: 20px;
+    /* Distância do botão da parte inferior da tela */
+    right: 20px;
+    /* Distância do botão da lateral direita da tela */
+    z-index: 99;
+    /* Garante que o botão fique acima de outros elementos */
+    border: none;
+    outline: none;
+    background-color: #beb5b5;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btn-voltar-topo:hover {
+    background-color: #eaa607;
+    /* Altera a cor de fundo quando o mouse passa por cima */
 }
