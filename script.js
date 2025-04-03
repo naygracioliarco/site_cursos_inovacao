@@ -1,6 +1,6 @@
 
 // Obtém o botão pelo ID
-var btnVoltarTopo = document.getElementById("btn-voltar-topo");
+var btnVoltarTopo = document.querySelector(".btn-voltar-topo");
 
 // Quando o usuário rolar a página, verifica a posição
 window.onscroll = function () {
